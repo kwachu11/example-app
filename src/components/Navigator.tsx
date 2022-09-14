@@ -4,11 +4,14 @@ import { stackNavigatorFactory } from 'react-nativescript-navigation'
 import { MainStackParamList } from './NavigationParamList'
 import { HomeScreen } from './HomeScreen'
 import { DetailsScreen } from './DetailsScreen'
+
+
 import { FlickService } from '../services'
 
 const StackNavigator = stackNavigatorFactory()
 
 export const mainStackNavigator = () => {
+  // Add this 👇
   const flickTitle = flickId => FlickService.getFlickById(flickId).title
   return (
     <BaseNavigationContainer>
@@ -27,6 +30,7 @@ export const mainStackNavigator = () => {
         />
         <StackNavigator.Screen
           name="Details"
+          // Add this 👇
           options={({ route }) => ({
             title: flickTitle((route.params as MainStackParamList['Details']).flickId)
           })}
@@ -36,3 +40,4 @@ export const mainStackNavigator = () => {
     </BaseNavigationContainer>
   )
 }
+
