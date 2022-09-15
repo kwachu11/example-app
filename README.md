@@ -1,2 +1,3 @@
 # example-app
-Aplikacja na systemy mobilne
+Aplikacja na Systemy urządzeń mobilnych
+Dawid Przelazły WSB Informatyka sem II - studia niestacjonarne II Stopnia
