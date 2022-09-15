@@ -2,7 +2,7 @@
   "name": "example-app",
   "main": "src/app.ts",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@nativescript/core": "~8.3.0",
     "@react-navigation/core": "^5.15.3",

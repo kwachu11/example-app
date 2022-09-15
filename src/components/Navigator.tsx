@@ -6,12 +6,12 @@ import { HomeScreen } from './HomeScreen'
 import { DetailsScreen } from './DetailsScreen'
 
 
-import { FlickService } from '../services'
+import { FlickService } from '../services/flick.service'
 
 const StackNavigator = stackNavigatorFactory()
 
 export const mainStackNavigator = () => {
-  // Add this 👇
+
   const flickTitle = flickId => FlickService.getFlickById(flickId).title
   return (
     <BaseNavigationContainer>
@@ -40,4 +40,3 @@ export const mainStackNavigator = () => {
     </BaseNavigationContainer>
   )
 }
-

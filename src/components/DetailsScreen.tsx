@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RouteProp } from '@react-navigation/core'
 import { FrameNavigationProp } from 'react-nativescript-navigation'
 import { MainStackParamList } from './NavigationParamList'
-import { FlickService } from '../services'
+import { _FlickService } from './src/services'
 
 type DetailsScreenProps = {
   route: RouteProp<MainStackParamList, 'Details'>
